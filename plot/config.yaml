@@ -1,0 +1,28 @@
+OUTPUT_DIR: 'output'
+PLOTS: [
+  {
+    INPUT_FILES: [ { FILE_NAME: '../tf_log/events.out.tfevents.1621481737.ps.19369.0',LABEL: '01' },
+                   { FILE_NAME: '../tf_log/events.out.tfevents.1621557508.ps.20413.0',LABEL: '02' },
+                   { FILE_NAME: '../tf_log/events.out.tfevents.1621557539.ps.21300.0',LABEL: '03' },
+    ],
+    KEY: 'lr',
+    TITLE: 'lr',
+    LEGEND: 'param',
+    TEMPLATE: [ 'science', 'ieee', 'no-latex' ],
+    X_LABEL: 'iteration',
+     Y_LABEL: 'lr',
+    SAVE_NAME: 'lr.png'
+  },
+  {
+    INPUT_FILES: [ { FILE_NAME: '../tf_log/events.out.tfevents.1621557539.ps.21300.0',LABEL: '01' },
+                   { FILE_NAME: '../tf_log/events.out.tfevents.1621481737.ps.19369.0',LABEL: '02' } ],
+    KEY: 'metrics/voc_2007_test/cat',
+    TITLE: 'cat',
+    LEGEND: 'param',
+    TEMPLATE: [ 'science', 'ieee', 'no-latex' ],
+    X_LABEL: 'iteration',
+    Y_LABEL: 'cat_acc',
+    SAVE_NAME: 'cat.png'
+  },
+]
+

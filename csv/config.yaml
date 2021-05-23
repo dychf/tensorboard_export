@@ -1,0 +1,8 @@
+INPUT_FILE:
+  [
+    { FILE_NAME: '../tf_log/events.out.tfevents.1621481737.ps.19369.0', NEW_NAME: '123.csv' },
+    { FILE_NAME: '../tf_log/events.out.tfevents.1621557508.ps.20413.0', NEW_NAME: '456.csv' },
+    { FILE_NAME: '../tf_log/events.out.tfevents.1621557539.ps.21300.0', NEW_NAME: '789.csv' }
+  ]
+OUTPUT_DIR: 'output'
+
